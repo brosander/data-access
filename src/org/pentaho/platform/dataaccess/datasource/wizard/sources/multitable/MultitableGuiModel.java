@@ -306,7 +306,7 @@ public class MultitableGuiModel extends XulEventSourceAdapter {
     this.selectedTables.clear();
     // Populate "selectedTables" from availableTables using logicalRelationships.
     AbstractModelList<JoinTableModel> selectedTablesList = new AbstractModelList<JoinTableModel>();
-    if(dto != null) {
+    if (dto != null) {
       for (String selectedTable : dto.getSelectedTables()) {
         this.selectTable(selectedTable, selectedTablesList, tables);
       }
